@@ -3,7 +3,7 @@ import bankPartner from "@src/ports/bank-partner";
 import userRepo from "@src/ports/repo/user";
 import userBankAccountRepo from "@src/ports/repo/user-bank-account";
 import { uuid } from "uuidv4";
-import BankAccount from "@src/types/bank-account";
+import userbankAccountNotifiers from "@src/ports/notifiers/user-bank-account";
 
 export default async (userParams: UserParams): Promise<UserBankAccount> => {
     const user: User = {
@@ -24,6 +24,7 @@ export default async (userParams: UserParams): Promise<UserBankAccount> => {
     };
 
     await userBankAccountRepo.insert(userBanckAccount);
+    await userbankAccountNotifiers.created(userBanckAccount);
     return userBanckAccount;
 }
 
