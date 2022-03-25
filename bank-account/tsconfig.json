@@ -30,6 +30,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": ["src", "test"],
+  "include": ["src", "test", "test"],
   "exclude": ["node_modules", "dist"]
 }
