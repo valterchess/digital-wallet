@@ -7,9 +7,8 @@ export interface UserBankAccount {
     readonly userId: string;
     readonly bankCode: string;
     readonly accountBranch: string;
-    readonly accounNumber: string;
+    readonly accountNumber: string;
 }
-
 export default interface User {
     readonly id: string;
     readonly fullName: string;
