@@ -1,7 +1,8 @@
-import { UserBankAccount } from "@src/types/user";
+import { UserBankAccount } from "@src/types/user"
+import userBankAccount from "../repo/user-bank-account"
 
-const created = async (_userBankAccount: UserBankAccount): Promise<void> => {};
+const created = async (userBankAccount: UserBankAccount): Promise<void> => {}
 
 export default {
-  created,
-};
+    created,
+}
