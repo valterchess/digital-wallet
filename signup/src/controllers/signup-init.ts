@@ -10,6 +10,7 @@ export default async (signupInitParams: SignupInitParams): Promise<Signup> => {
     const signup: Signup = {
         token: uuid(), // token de 36 caracteres proveniente da função uuid()
         initParams: signupInitParams,
+        status: "IN_PROGRESS",
     };
 
     await signupRepo.insert(signup);
