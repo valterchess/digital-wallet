@@ -20,11 +20,12 @@ Aproveitando também para aplicar a utilização do conceito **_feature branchs_
 - JavaScript
 - Node.js
 - Git
+
 - yarn
 - npm
 - VScode
+
 - *uuid
-<-- teste -->
 - *chai
 - *sinon-chai
 - *mocha
