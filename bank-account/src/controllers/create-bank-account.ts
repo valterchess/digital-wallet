@@ -6,11 +6,12 @@ import { uuid } from "uuidv4";
 import userbankAccountNotifiers from "@src/ports/notifiers/user-bank-account";
 
 export default async (userParams: UserParams): Promise<UserBankAccount> => {
-    const user: User = {
-        id: uuid(),
-        fullName: userParams.fullName,
-    };
 
+    //constroi um novo usuário com os atributos recebidos no parametro
+    const user: User = {
+        id: uuid(), // constroi um id genérico, que será verificado de acordo com o tamanho da string
+        fullName: userParams.fullName, // recebe o valor de fullName do parametro (definido no test)
+    };
 
     await userRepo.insert(user);
 

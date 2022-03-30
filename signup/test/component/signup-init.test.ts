@@ -14,7 +14,7 @@ describe("signup initialization", () => {
 
   afterEach(() => restore());
   // teste do recurso do end-point de signup de um recurso (client)
-  it("return a signup token as response  to signup initialization", async () => {
+  it("return a signup token as response to signup initialization", async () => {
 
     const signup = await signupInit(signupParams);
     // verificando a resposta do token
