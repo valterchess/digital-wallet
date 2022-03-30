@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import Sinon, { SinonStub, stub, restore } from "sinon";
+import { SinonStub, stub, restore } from "sinon";
 import userRepo from "@src/ports/repo/user";
 import userBankAccountRepo from "@src/ports/repo/user-bank-account";
 import userBankAccountNotifier from "@src/ports/notifiers/user-bank-account";
